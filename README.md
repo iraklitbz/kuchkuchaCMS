@@ -40,6 +40,20 @@ Strapi gives you many possible deployment options for your project including [St
 yarn strapi deploy
 ```
 
+## Email with Resend
+
+This project is configured to use Resend through Strapi's email plugin.
+
+Required environment variables:
+
+```bash
+RESEND_API_KEY=re_xxxxxxxxx
+RESEND_FROM_EMAIL=no-reply@yourdomain.com
+RESEND_REPLY_TO=hola@yourdomain.com
+```
+
+Once those variables are present, Strapi can send emails through `strapi.plugin('email').service('email').send(...)`.
+
 ## 📚 Learn more
 
 - [Resource center](https://strapi.io/resource-center) - Strapi resource center.
