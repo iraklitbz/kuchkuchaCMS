@@ -54,6 +54,26 @@ RESEND_REPLY_TO=hola@yourdomain.com
 
 Once those variables are present, Strapi can send emails through `strapi.plugin('email').service('email').send(...)`.
 
+## Media with Cloudinary
+
+This project is configured to upload media to Cloudinary through Strapi's upload plugin.
+
+Required environment variables:
+
+```bash
+CLOUDINARY_NAME=your-cloud-name
+CLOUDINARY_KEY=your-api-key
+CLOUDINARY_SECRET=your-api-secret
+```
+
+Optional:
+
+```bash
+CLOUDINARY_FOLDER=kuchkucha
+```
+
+After restarting Strapi, new uploads from the Media Library or any upload-enabled field will store files in Cloudinary and the API will return Cloudinary URLs in `url`.
+
 ## 📚 Learn more
 
 - [Resource center](https://strapi.io/resource-center) - Strapi resource center.
