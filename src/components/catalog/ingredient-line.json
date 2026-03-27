@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_catalog_ingredient_lines",
+  "info": {
+    "displayName": "Ingredient Line",
+    "description": "Ingredient or composition line for a product"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "amount": {
+      "type": "decimal"
+    },
+    "unit": {
+      "type": "enumeration",
+      "enum": [
+        "g",
+        "kg",
+        "ml",
+        "l",
+        "unit"
+      ]
+    },
+    "note": {
+      "type": "string"
+    }
+  }
+}
