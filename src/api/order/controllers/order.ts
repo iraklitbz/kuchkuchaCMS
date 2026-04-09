@@ -1,3 +1,4 @@
 import { factories } from '@strapi/strapi'
 
-export default factories.createCoreController('api::order.order')
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default factories.createCoreController('api::order.order' as any)
